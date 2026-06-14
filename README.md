@@ -10,6 +10,29 @@
 
 ---
 
+## How It Works — Visual Walkthrough
+
+### Step 1 — Open the app. Load your CSV file.
+
+![Empty state — app initialized](screenshots/01_empty.png)
+
+The engine starts ready. Click **[ LOAD CSV ]** to select your S/4HANA pick-order export, optionally enter a customer name, then press **[ OPTIMIZE ]**.
+
+---
+
+### Step 2 — Optimized pick sequence, grouped by pallet layer.
+
+![Results — optimized pick sequence by layer](screenshots/02_results.png)
+
+The engine re-sequences all picks into three color-coded layers:
+- 🔴 **BASE** — heaviest items first (Heineken 16kg, Evian Water 12kg, Prosecco 10kg)
+- 🟡 **MIDDLE** — medium weight (Merlot 9kg, Sauvignon Blanc 8.5kg, Toilet Roll 5kg)
+- 🟢 **TOP** — lightest items last (Sparkling Water 9.5kg, Chewing Gum 1.2kg)
+
+The picker follows this sequence and builds a stable pallet **first time, every time** — no rebuild needed.
+
+---
+
 ## Table of Contents
 
 1. [Executive Summary](#1-executive-summary)
